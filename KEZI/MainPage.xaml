@@ -14,6 +14,7 @@
         <Button Content="300" HorizontalAlignment="Left" Margin="671,175,0,0" VerticalAlignment="Top" Height="157" Width="248"/>
         <Button Content="400" HorizontalAlignment="Left" Margin="924,175,0,0" VerticalAlignment="Top" Height="157" Width="248"/>
         <Button Content="ListDevices" HorizontalAlignment="Left" Margin="165,612,0,0" VerticalAlignment="Top" Height="157" Width="248" Click="Button_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="572,612,0,0" VerticalAlignment="Top" ItemsSource="{x:Bind ViewModel.SerialPorts}"/>
 
 
     </Grid>

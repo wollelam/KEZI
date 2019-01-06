@@ -25,11 +25,16 @@ namespace KEZI
         public MainPage()
         {
             this.InitializeComponent();
+            this.ViewModel = new SerialPortViewModel();
+
+            this.ViewModel.LoadSerialPorts();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             KEZI.FindDevices();
         }
+
+        public SerialPortViewModel ViewModel { get; }
     }
 }
